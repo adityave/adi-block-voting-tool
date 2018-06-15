@@ -293,7 +293,7 @@ var eosVoter = class {
            
             // console.log(eos_candidate123);
             tr.append(this.addTd("<a href='" + row.url + "' target='_blank'>" + row.owner + "</a>"));
-            tr.append(this.addTd('bbbbbb'));
+            tr.append(this.addTd('test text'));
             
             // tr.append(this.addTd(row.location));
             
