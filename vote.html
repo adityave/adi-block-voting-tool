@@ -1,0 +1,102 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Heebo:500,400,300,700,800|Lato:700,700i,300i,300,900i,900,400i,400|PT+Sans:700,700i,400i,400"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="eos-voting.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container text-center p-4">
+            <a href="https://eosuk.io" target="_blank">
+                <img src="logo.png" width="250px" class="mb-3">
+            </a>
+            <h1 class="text-white">EOS Block Producer Voting Tool</h1>
+        </div>
+    </header>
+    
+    <div class="container bg-white">
+        <h1 class="mt-3">Enter Your Private Key</h1>
+        <div class="card mt-3 mb-3">
+            <div class="card-body">
+                <p>Please enter your EOS private key. Your key is only used to sign a transaction locally and never leaves this
+                    application. Once your private key is entered, please verify your EOS account name.
+                </p>
+                <p>Once you click Vote, your transaction will be delivered to the EOS blockchain and your vote will be registered.
+                </p>
+                <p class="card-text">
+                    <div class="form-group">
+                    	Selected BPs: <strong id="selectedBPs"></strong><br>
+                        <label for="eos_private_key">Private key</label> 
+                        <input type="password" id="eos_private_key" placeholder="Required" class="form-control">
+                        <small id="private_key_message" class="form-text"></small>
+                        <label for="cleos_name">Account Name</label>
+                        <label type="text" id="cleos_name" placeholder="Required">
+                            <small id="emailHelp" class="form-text text-muted">Your EOS Account Name.</small>
+                    </div>
+                </p>
+                <!-- <div class="container"> -->
+
+                <a href="list.html">
+                    <button id="" class="btn btn-link float-left pl-5 pr-5 mr-16">
+                        Back
+                    </button>
+                </a>
+                <button id="vote_button" class="btn btn-primary float-left pl-5 pr-5" disabled>
+                    Vote
+                </button>
+            </div>
+            <!-- </div> -->
+
+            <div class="mt-2" id="messages">
+
+            </div>
+            <!-- 
+		<div class="mb-2">
+
+			<div class="form-group col-sm-3 float-right pr-0">
+				<input type="text" id="search" class="form-control" onkeyup="voter.search()" placeholder="Search..." />
+			</div>
+		</div> -->
+            <!-- <table class="table table-striped" id="bps">
+			<thead>
+				<tr>
+					<th scope="col">Select</th>
+					<th scope="col">Owner</th>
+					<th scope="col">Location</th>
+					<th scope="col">Total Votes</th>
+					<th scope="col">Percentage of Votes</th>
+				</tr>
+			</thead>
+			<tbody>
+
+
+			</tbody>
+		</table> -->
+        </div>
+</div> <!-- added by AD -->
+<footer class="text-center footer">
+		<div class="container">
+				<div class="text-white">This is open source software. View the code on GitHub at this
+						<a href="https://github.com/eos-uk/eos-block-producer-voting-app" target="_blank">link</a>
+					</div>
+			<div class="text-white">Brought to you by
+				<a href="https://eosuk.io" target="_blank">eosuk.io</a>
+			</div>
+		</div>
+	</footer>
+
+
+        <script src="eosjs.js"></script>
+        <script type="text/javascript" src="eos-voting.js"></script>
+        <script type="text/javascript">
+        	document.getElementById("selectedBPs").innerHTML = window.localStorage.getItem('selectedBPs');
+        </script>
+
+</body>
+
+</html>

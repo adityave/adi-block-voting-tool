@@ -1,0 +1,131 @@
+<html>
+
+<head>
+
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Heebo:500,400,300,700,800|Lato:700,700i,300i,300,900i,900,400i,400|PT+Sans:700,700i,400i,400"
+	/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="eos-voting.css">
+
+</head>
+
+<body>
+
+	<header>
+
+		<div class="container text-center p-4">
+			<a href="https://eosuk.io" target="_blank">
+				<img src="logo.png" width="250px" class="mb-3">
+			</a>
+			<h1 class="text-white">EOS Block Producer Voting Tool by EOS UK</h1>
+		</div>
+	</header>
+	
+	<div class="container bg-white">
+		<div class="row">
+			<div class="col-xs-12  pb-1 pt-4 pl-4 pr-4">
+				<!-- Boxes de Acoes -->
+				<p> Welcome to the EOS Block Producer voting tool from EOS UK. You will be able to vote for any registered Block Producer on EOS through this application.
+
+						You will be prompted to select up to 30 BPs, then enter your private key, which will only be used locally to sign your transaction. Your private key is never stored and never leaves this application. 
+						
+						Your vote is then signed locally using your private key, and the transaction is sent to the EOS blockchain.
+						</p>
+
+				<!-- <ul>
+					<li> The only EOS voting tool that is endorsed is a command line application which is difficult to install and use and will
+						greatly limit access to voting.</li>
+					<li>Scatter, the most popular Web3 EOS wallet, has never been tested in production and isn’t fully verified by the community.</li>
+					<li>The web voting tool we built only works on HTTP, and even though your private key never leaves your browser, we wanted
+						an extra level of security.</li>
+				</ul> -->
+				<hr class="mt-4">
+			</div>
+
+		</div>
+		<div class="row">
+			<!-- Boxes de Acoes -->
+
+			<div class="col-xs-12 col-sm-6 col-lg-4 pl-4">
+				<div class="box">
+					<div class="icon">
+						<div class="image">
+							<i class="fa fa-check-circle"></i>
+						</div>
+						<div class="info">
+							<h3 class="title">Vote for Block Producers (BPs)</h3>
+							<p>
+								You can vote for up to 30 BPs, the 21 BPs with the most votes will start producing blocks. Your vote is weighted based on
+								the amount of EOS in your wallet.
+							</p>
+						</div>
+					</div>
+					<div class="space"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-lg-4">
+				<div class="box">
+					<div class="icon">
+						<div class="image">
+							<i class="fa fa-key"></i>
+						</div>
+						<div class="info">
+							<h3 class="title">Enter Your Private Key</h3>
+							<p>
+								Your private key never leaves this application and is only used to sign transactions. After entering your private key, please
+								verify the displayed account name.
+							</p>
+						</div>
+					</div>
+					<div class="space"></div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-lg-4 pr-4">
+				<div class="box">
+					<div class="icon">
+						<div class="image">
+							<i class="fa fa-thumbs-o-up"></i>
+						</div>
+						<div class="info">
+							<h3 class="title">Click Vote</h3>
+							<p>
+								Voting signs your votes with your private key and encrypts your transaction. The signed transaction is then sent to the EOS
+								blockchain using tools provided by EOSIO, namely,
+								<a href="https://github.com/EOSIO/eosjs" target="_blank">eosjs</a>.
+							</p>
+
+						</div>
+
+					</div>
+					<div class="space"></div>
+				</div>
+			</div>
+		</div>
+				<div class="row mb-5">
+					<div class="test">
+						<a href="list.html"><button class="btn btn-primary">Next</button></a>
+					</div>
+				</div>
+
+
+					
+		
+		<script src="eosjs.js"></script>
+		<!-- <script type="text/javascript" src="eos-voting.js"></script> -->
+</div><!-- added by AD -->
+
+<footer class="text-center footer">
+		<div class="container">
+				<div class="text-white">This is open source software. View the code on GitHub at this
+						<a href="https://github.com/eos-uk/eos-block-producer-voting-app" target="_blank">link</a>
+					</div>
+			<div class="text-white">Brought to you by
+				<a href="https://eosuk.io" target="_blank">eosuk.io</a>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>

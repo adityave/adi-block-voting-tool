@@ -1,0 +1,37 @@
+{
+  "name": "eos-uk-block-producer-voting-tool",
+  "version": "1.0.0",
+  "description": "eos-uk-block-producer-voting-tool",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "build": {
+    "appId": "com.liquideos.vote",
+    "mac": {
+      "target": "pkg"
+    },
+    "win": {
+      "target": "portable"
+    },
+    "files": [
+      "**/*",
+      "!node_modules/**"
+    ]
+  },
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron-builder": "^20.15.1",
+    "electron-packager": "^12.1.0",
+    "electron": "^2.0.0"
+  },
+  "dependencies": {
+    "electron-fetch": "^1.1.0",
+    "electron-log": "^2.2.14",
+    "npm": "^6.1.0"
+  }
+}
